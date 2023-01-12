@@ -1,0 +1,68 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #100E18;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 140px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+  gap: 10px;
+  width: 233px;
+  height: 76px;        
+  background: #FAFF05;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  color: #100E18;
+  border: none;
+}
+
+@media (max-width: 1050px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+}

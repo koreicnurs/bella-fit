@@ -1,0 +1,142 @@
+.main {
+    background: #C4140F;
+    height: 960px;
+    color: #FFFFFF;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+
+    &__container {
+        display: flex;
+    }
+
+    &__left {
+        width: 480px;
+        position: absolute;
+        top: 25%;
+    }
+
+    &__numbers {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 60px;
+    }
+
+    &__line {
+        width: 100px;
+        border: 1px solid #FAFF05;
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        font-size: 64px;
+        line-height: 80px;
+        letter-spacing: 0.15em;
+        text-transform: capitalize;
+        margin-bottom: 60px;
+    }
+
+    &__right {
+        background: url(../images/woman.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+        width: 635px;
+        height: 897px;
+    }
+
+    &__text {
+        background: url(../images/fitness.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 79%;
+        height: 336px;
+        left: 50%;
+        top: 50%;
+        translate: (-45%);
+        font-size: 280px;
+        line-height: 336px;
+        letter-spacing: 140px;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1285px) {
+    .main {
+        height: 710px;
+
+            &__right {
+                width: 490px;
+                height: 692px;
+            }
+
+            &__left {
+                width: 391px;
+                top: 6%;
+                margin-left: -100px;
+            }
+    }
+}
+
+@media (max-width: 1050px) {
+    .main {
+        display: flex;
+        height: auto;
+        &__right {
+            position: static;
+        }
+
+        &__left {
+            position: relative;
+            margin-left: 0;
+            width: 100%;
+            margin-bottom: 100px;
+        }
+
+        &__text {
+            top: 26%;
+        }
+    }
+
+    .main__container {
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .main {
+        &__right {
+            position: relative;
+            height: 401px;
+            left: 0;
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+
+        &__text {
+            font-size: 80px;
+            line-height: 96px;
+            opacity: 30;
+            top: 36%;
+        }
+    }
+
+    .main__container {
+        
+    }
+}
+
